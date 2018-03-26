@@ -327,6 +327,12 @@ function! s:MapKeys() abort
         unlet def
     endfor
 
+    " Some personal mapping preference
+    nnoremap <silent> <buffer> j <Down>
+    nnoremap <silent> <buffer> k <Up>
+    nnoremap <silent> <buffer> e /
+    nmap <silent> <buffer> t <Plug>(easymotion-bd-jk)
+
     let b:tagbar_mapped_keys = 1
 endfunction
 

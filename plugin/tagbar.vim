@@ -95,17 +95,17 @@ endif
 
 function! s:setup_keymaps() abort
     let keymaps = [
-        \ ['jump',          '<CR>'],
-        \ ['preview',       'p'],
+        \ ['jump',          ['o', '<CR>']],
+        \ ['preview',       'n'],
         \ ['previewwin',    'P'],
         \ ['nexttag',       '<C-N>'],
         \ ['prevtag',       '<C-P>'],
-        \ ['showproto',     '<Space>'],
+        \ ['showproto',     'u'],
         \ ['hidenonpublic', 'v'],
         \
         \ ['openfold',      ['+', '<kPlus>', 'zo']],
         \ ['closefold',     ['-', '<kMinus>', 'zc']],
-        \ ['togglefold',    ['o', 'za']],
+        \ ['togglefold',    ['za']],
         \ ['openallfolds',  ['*', '<kMultiply>', 'zR']],
         \ ['closeallfolds', ['=', 'zM']],
         \ ['incrementfolds',  ['zr']],
